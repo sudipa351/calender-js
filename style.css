@@ -18,12 +18,60 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: crimson;
-    background-color: darkgoldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(231, 20%, 85%);
+    background-color: #121420;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.cell {
+    width: 100%;
+    padding: 0.4em 0.8em;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cell:hover, .cell:focus {
+    color: hsl(231, 20%, 85%);
+    background-color: #bf4e30;
+}
+
+.cell:empty {
+    width: 0;
+    padding: 0;
+}
+
+.cell--unselectable {
+    color: hsl(231, 20%, 50%);
+}
+
+.cell--unselectable:hover, .cell--unselectable:focus {
+    color: hsl(231, 20%, 50%);
+    background-color: transparent;
+}
+
+.date-text {
+    padding: 1em 0.8em;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
