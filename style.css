@@ -1,0 +1,29 @@
+.calendar {
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-columns: max-content;
+    grid-auto-flow: row;
+    color: black;
+    background-color: burlywood;
+}
+h1 {
+    margin: 0.5em 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: crimson;
+    background-color: darkgoldenrod;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
